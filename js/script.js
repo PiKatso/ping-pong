@@ -17,11 +17,10 @@ var pingPong = function(num) { //create function to apply logic statements//
 
 var inputUI = function(input) {   //varible to call function withing user interface//
   var inputArray = [];
-
   for (let i = 1; i <= input; i++) {   //loop through each element pushing the result of the pingPong function//
     inputArray.push(pingPong(i));
   }
-  var result = inputArray.join(""); //join elements together and return a result//
+  var result = inputArray.join(" , "); //join elements together and return a result//
   return result;
 };
 
@@ -30,10 +29,8 @@ var inputUI = function(input) {   //varible to call function withing user interf
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-
     var userInput = parseInt($("#input").val()); //collect and parse input from user//
     $("#output").empty();   //empty out past results in the output section before giving new answer//
     $("#output").text(inputUI(userInput)); //call function inputUI and apply to collected user input and show in user output.//
-
   });
 });
