@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+.container {
+  border-color: white;
+  border-image-width: 500px;
+}
+
+.jumbotron {
+  background-image: url("../img/pingpong.jpg");
+  text-align: center;
+  color: white;
+}
+
+#userInput {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+button.btn {
+  margin : 25px;
+}
