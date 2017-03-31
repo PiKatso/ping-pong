@@ -1,18 +1,25 @@
 //Business Logic//
 var splitToNumbers = function(number){
-  var inputNumbers = [];
+  var inputString = [];
 
+  }
+
+  number = math.floor(input)
 }
 
-number = math.floor(input)
+function pingPong(num) {
+  if (num % 15 === 0) {
+    return "ping-pong";
+  }
+  if (num % 3 === 0) {
+    return "ping";
+  }
+}
 
 
 
-
-
-
-function validateinput(number) {
-  return ! /[^\d]/.test(number);
+function validateinput(string) {
+  return ! /[^\d]/.test(string);
 }
 
 //UI Logic//
